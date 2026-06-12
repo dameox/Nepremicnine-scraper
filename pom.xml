@@ -23,6 +23,19 @@
             <artifactId>selenium-java</artifactId>
             <version>4.19.1</version> <!-- Use latest version -->
         </dependency>
+        <!-- Auto-downloads a chromedriver that matches the installed Chrome,
+             so there is no hardcoded local path to maintain. -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.9.2</version>
+        </dependency>
+        <!-- No-op SLF4J backend: silences the "No SLF4J providers were found" warning. -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>2.0.13</version>
+        </dependency>
     </dependencies>
 
 </project>

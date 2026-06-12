@@ -1,7 +1,20 @@
 target/
+out/
+build/
+*.jar
+*.class
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+### Scraped content / runtime output — never commit site data ###
+page_source.txt
+*.page_source.txt
+scraped/
+*.scrape
+*.csv
+*.html
+cp.txt
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
